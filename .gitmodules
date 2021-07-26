@@ -1,0 +1,3 @@
+[submodule "contrib/HuffmanPy"]
+	path = contrib/HuffmanPy
+	url = https://github.com/ttsiodras/HuffmanPy
