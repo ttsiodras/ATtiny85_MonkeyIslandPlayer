@@ -1,0 +1,7 @@
+contrib/[fd]*.data
+contrib/.data
+contrib/create_data
+contrib/decoder
+contrib/songs_in_huffman.h
+build.log
+tmp

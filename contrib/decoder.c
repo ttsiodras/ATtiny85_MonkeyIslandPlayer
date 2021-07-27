@@ -34,13 +34,11 @@ void decode_huffman(
             p+=2;
         }
         if (bits == *p++) {
-            if (*p) {
-                fprintf(fp, "%d\n", *p == -1 ? 65535 : *p);
-                fflush(fp);
-                bits = 1;
-                if (!total_bits)
-                    break;
-            }
+            fprintf(fp, "%d\n", *p == -1 ? 65535 : *p);
+            fflush(fp);
+            bits = 1;
+            if (!total_bits)
+                break;
         }
         if (!total_bits) {
             puts("[x] Internal error...");

@@ -48,10 +48,8 @@ public:
             }
             if (_bits == current_idx) {
                 int value = pgm_read_word_near(++p);
-                if (value) {
-                    _bits = 1;
-                    return value;
-                }
+                _bits = 1;
+                return value;
             }
         }
     }
