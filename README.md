@@ -11,7 +11,7 @@ Just read the [blog post](https://www.thanassis.space/monkeyisland.html).
 
 --
 
-For those that want to reproduce the circuit: I confess didn't make a schematic, since the HW part is so simple :-)
+For those that want to reproduce the circuit: I confess I didn't make a schematic, since the HW part is so simple :-)
 The only part that matters is the transistor-speaker connection - copying it below from my blog post:
 
 ![Connecting PB0 to the base of the transistor - and controlling the speaker](contrib/transistor-speaker.jpg "Connecting PB0 to the base of the transistor - and controlling the speaker")
@@ -24,7 +24,9 @@ As for the connections, as you can see [at the top of the code](beeperJukeboxTin
 
 The pushbutton pin is pulled to GND via a 10K resistor, but pulled up to VCC when the button is pushed.
 
-And here's some ASCII-art of the ATtiny85, to show where these pins are:
+Also: these assignments are just `#define`s in the code - feel free to change them if a different placement suits you better.
+
+Here's some ASCII-art of the ATtiny85, to show the pin layout:
 
                                         +--------+
            (PCINT5/~RESET/ADC0/dW) PB5  | 1    8 | VCC
