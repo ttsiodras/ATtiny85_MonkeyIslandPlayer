@@ -1,6 +1,10 @@
 /**
- * Attempting to measure current with a DIY shunt resistor,
- * and voltage amplification via an LM358 opamp.
+ * As you can see in the #defines below, I connected:
+ *
+ * - The transistor's base to PB0 (via the 1K resistor)
+ * - The LED to PB1 (via a 220Ohm resistor)
+ * - ...and the pushbutton to PB3.
+ *   The pin is pulled to GND via a 10K, but pulled to VCC when the button is pushed.
  *
  *                                     +--------+
  *        (PCINT5/~RESET/ADC0/dW) PB5  | 1    8 | VCC
