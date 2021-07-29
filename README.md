@@ -12,7 +12,7 @@ Just read the [blog post](https://www.thanassis.space/monkeyisland.html).
 --
 
 For those that want to reproduce the circuit: I confess I didn't make a schematic, since the HW part is so simple :-)
-The only part that matters is the transistor-speaker connection - copying it below from my blog post:
+The only part that matters is the transistor-speaker connection - copying it below from the Arduino forum:
 
 ![Connecting PB0 to the base of the transistor - and controlling the speaker](contrib/transistor-speaker.jpg "Connecting PB0 to the base of the transistor - and controlling the speaker")
 
